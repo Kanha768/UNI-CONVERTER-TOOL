@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact Us</title>
+<link rel="icon" href="src/favicon 2.png" type="image/png" />
+<link href="style3.css" rel="stylesheet" type="text/css">
+<!-- Font Awesome CDN for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+  }
+  /* Header styling */
+  header {
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 3em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+    /* Back Button Styles */
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s, transform 0.2s;
+  z-index: 1000;
+}
+.back-button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+  
+  /* Main container */
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  /* Contact form styling */
+  .contact-form {
+    background: rgba(255,255,255,0.9);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+  }
+  .contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #2c3e50;
+  }
+  .form-group {
+    margin-bottom: 15px;
+  }
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    box-sizing: border-box;
+  }
+  textarea {
+    resize: vertical;
+  }
+  button {
+    display: block;
+    margin: 20px auto 0 auto;
+    background-color: #3498db;
+    color: #fff;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s;
+  }
+  button:hover {
+    background-color: #2980b9;
+  }
+  /* Contact info section */
+  .contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    color: #fff;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    padding: 50px 20px;
+    margin-top: 50px;
+    border-radius: 20px;
+  }
+  .contact-item {
+    flex: 1 1 200px;
+    text-align: center;
+  }
+  .contact-item i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    display: block;
+    color: #fff;
+  }
+
+  /* Responsive adjustments */
+  @media(max-width: 768px){
+    header h1 {
+      font-size: 2em;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <h1>Contact Us</h1>
+</header>
+<!-- Back Button -->
+<button class="back-button" onclick="window.history.back()">Back</button>
+
+
+<!-- Contact Form -->
+<section class="container">
+  <div class="contact-form">
+    <h2>Get in Touch</h2>
+    <form onsubmit="return false;">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required />
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- Contact Details -->
+<section class="contact-details">
+  <div class="contact-item">
+    <i class="fas fa-phone"></i>
+    <p>+91 7681022020</p>
+  </div>
+  <div class="contact-item">
+    <i class="fas fa-envelope"></i>
+    <p>mrindianh46@gmail.com</p>
+  </div>
+  <div class="contact-item">
+    <i class="fas fa-map-marker-alt"></i>
+    <p>Bhubaneswar,India</p>
+  </div>
+</section>
+<!-- Social Media Icons -->
+<div class="social-icons">
+  <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+  <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+  <a href="https://github.com/Kanha768" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+</div>
+<!-- Foot -->
+<footer>
+    <h4 style="color:rgb(19, 150, 238);">Prohibition of Scraping and Cloning</h4>
+    <p><small>
+You are prohibited from scraping,harvesting, or otherwise extracting any data, content, or code from this website without express written permission from 
+the website owner. Any unauthorized scraping or cloning of the website will be considered a violation of intellectual property rights. The website owner reserves the right to take legal action.</small></p><br><h4>UNI CONVERTER TOOL Pvt. Ltd.</h4>
+
+<!-- Optional Footer -->
+<div class="footer">
+  &copy;2025 Uni Converter Free Tool.All rights reserved.
+</div>
+
+</body>
+</html>
