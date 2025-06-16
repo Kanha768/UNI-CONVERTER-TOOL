@@ -1,0 +1,45 @@
+/* Sidebar menu styles */
+  .side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hidden by default */
+    width: 250px;
+    height: 100%;
+    background-color: rgba(50, 114, 233, 0.95);
+    box-shadow: 2px 0 8px rgba(25, 216, 66, 0.3);
+    padding: 20px;
+    transition: left 0.3s ease;
+    z-index: 2000;
+    overflow-y: auto;
+  }
+
+  /* When active, slide in */
+  body.menu-open .side-menu {
+    left: 0;
+  }
+
+  /* Menu header */
+  .side-menu h2 {
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.4em;
+    color: #000000;
+  }
+
+  /* Menu items */
+  .menu-item {
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    background-color: #312f2f;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    transition: background 0.2s;
+    color: #e9e9e9;
+  }
+  .menu-item:hover {
+    background-color: #000000;
+    color: #13d49a;
+  }
